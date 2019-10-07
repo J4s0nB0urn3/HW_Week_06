@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>homeWork_week_06</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+
+<div class="outer-box">
+      <h1>Welcome to our "Build a fellowship!" website.</h1>
+      <h1>Do you like Lord of the Rings?</h1>
+      <h1>Would you like to create your own Fellowship of the Ring?</h1>
+      <h1>You are at the right place to do it!</h1>
+      <h2>You can add as many characters as you would like, but choose wisely...</h2><br>
+
+      <div class="box">
+        <form id="hero-form">
+          <div class="box-item">
+            <label for="name" class="main">Pick a name for your character: </label>
+            <input type="text" id="name" pattern="[A-Za-z]{3,20}" style="font-size: 18px; font-family: Josefin Slab; color: dodgerblue;" required><br>
+
+            <label for="title" class="main">Pick a fancy title for your character: </label>
+            <input type="text" id="title" style="font-size: 18px; font-family: Josefin Slab; color: dodgerblue;" required><br>
+
+            <label for="race" class="main">Pick a race for your character: </label>
+            <select class="button" id="race" style="height: 25px; width: 100px; font-size: 15px; color: dodgerblue;">
+              <option value="Human">Human</option>
+              <option value="Elf">Elf</option>
+              <option value="Dwarf">Dwarf</option>
+              <option value="Hobbit">Hobbit</option>
+              <option value="Ent">Ent</option>
+              <option value="Beorning">Beorning</option>
+              <option value="Orc">Orc</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Balrog">Balrog</option>
+              <option value="Goblin">Goblin</option>
+              <option label="Wraith">Wraith</option>
+            </select><br>
+
+            <label for="weapon" class="main">Pick a weapon for your character: </label>
+            <select class="button" id="weapon" style="height: 25px; width: 100px; font-size: 15px; color: dodgerblue;">
+              <option value="Sword">Sword</option>
+              <option value="Bow">Bow</option>
+              <option value="Axe">Axe</option>
+              <option value="Knives">Knives</option>
+              <option value="Spear">Spear</option>
+            </select><br><br>
+
+            <button type="submit">Create a new character</button>
+          </div>
+        </form>
+      </div>
+      <h1>Here is your fellowship, good luck in the battle for Middle-Earth!</h1>
+      <button type="button" id="delete-everything">Delete everything</button>
+      <h2>Your heroes:</h2>
+      <div id="fellowship"></div>
+</div>
+
+</body>
+</html>
